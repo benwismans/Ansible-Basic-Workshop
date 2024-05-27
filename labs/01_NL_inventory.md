@@ -14,8 +14,7 @@ In de inventory file wordt beschreven hoe Ansible je clients kan bereiken. Een A
 
   ```
   [workshop]
-  mst-ansible-training-userX-a.yxorp.nl 
-  mst-ansible-training-userX-b.yxorp.nl
+lab0X02.cc.lan
 
   ```
 
