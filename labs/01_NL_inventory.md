@@ -36,13 +36,13 @@ Door een ansible.cfg in dezelfde directory te zetten als het playbook (welke we 
   ``$ vi ansible.cfg``
 
 * Vul de ansible.cfg met (let op je usernummer):
-  ```
+  
   [defaults]
   inventory = ~/inventory
   remote_user = userXX
 
   host_key_checking = False
-  ```
+  
 
 ## Task 1.3: Test de werking
 Ansible werkt met modules. Voor bijna elke functie is wel een module te vinden. Voor het aanmaken van een gebruiker wordt bijvoorbeeld de module ``user`` gebruikt. In onze eerste stap met Ansible gaan we de module ``ping`` gebruiken. Met de module ``ping`` kun je de verbinding met je clients testen. Anders dan je gewend bent van de ping commando's van je Operating System (bijvoorbeeld Windows of Linux), test de ``ping`` module niet alleen of de client bereikbaar is (icmp reply), maar controleert of Ansible daadwerkelijk in kan loggen op de client (voor Linux clients logt Ansible in met SSH). Zie https://docs.ansible.com/ansible/latest/modules/ping_module.html#ping-module.
